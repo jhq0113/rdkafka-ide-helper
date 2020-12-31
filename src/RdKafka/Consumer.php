@@ -12,6 +12,21 @@ namespace RdKafka;
 class Consumer extends RdKafka
 {
     /**
+     * Create a new topic instance
+     * @link https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka.newtopic.html
+     * @param string $topic_name
+     * @param TopicConf|null $topic_conf
+     * @return ConsumerTopic
+     * @datetime 2020/12/31 5:27 下午
+     * @author   roach
+     * @email    jhq0113@163.com
+     */
+    public function newTopic($topic_name, TopicConf $topic_conf = null)
+    {
+
+    }
+
+    /**
      * Create a new message queue instance
      * @link https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka-consumer.newqueue.html
      * @return \RdKafka\Queue

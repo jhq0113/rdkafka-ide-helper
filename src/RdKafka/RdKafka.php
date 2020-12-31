@@ -13,9 +13,9 @@ class RdKafka
 {
     /**
      * RdKafka constructor.
-     * @param RdKafka\Conf|null $conf
+     * @param Conf|null $conf
      */
-    public function __construct(RdKafka\Conf $conf = null)
+    public function __construct(Conf $conf = null)
     {
     }
 
@@ -33,6 +33,21 @@ class RdKafka
      * @email    jhq0113@163.com
      */
     public function addBrokers ($broker_list )
+    {
+
+    }
+
+    /**
+     * Create a new topic instance
+     * @link https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka.newtopic.html
+     * @param string $topic_name
+     * @param TopicConf|null $topic_conf
+     * @return Topic
+     * @datetime 2020/12/31 5:27 下午
+     * @author   roach
+     * @email    jhq0113@163.com
+     */
+    public function newTopic($topic_name, TopicConf $topic_conf = null)
     {
 
     }

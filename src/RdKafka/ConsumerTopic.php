@@ -30,12 +30,12 @@ class ConsumerTopic
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-consumertopic.consumequeuestart.html
      * @param integer $partition
      * @param integer $offset
-     * @param RdKafka\Queue $queue
+     * @param Queue $queue
      * @datetime 2020/12/31 4:22 下午
      * @author   roach
      * @email    jhq0113@163.com
      */
-    public function consumeQueueStart(int $partition, int $offset, RdKafka\Queue $queue)
+    public function consumeQueueStart($partition, $offset, Queue $queue)
     {
 
     }
@@ -76,7 +76,7 @@ class ConsumerTopic
      * @author   roach
      * @email    jhq0113@163.com
      */
-    public function offsetStore($partition , $offset )
+    public function offsetStore($partition , $offset)
     {
 
     }

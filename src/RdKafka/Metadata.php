@@ -14,7 +14,7 @@ class Metadata
     /**
      * Get broker list
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-metadata.getbrokers.html
-     * @return  RdKafka\Metadata\Collection
+     * @return  \RdKafka\Metadata\Collection
      * @datetime 2020/12/31 3:59 下午
      * @author   roach
      * @email    jhq0113@163.com
@@ -53,7 +53,7 @@ class Metadata
     /**
      * Get the topic list
      * @link https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka-metadata.gettopics.html
-     * @return RdKafka\Metadata\Collection
+     * @return \RdKafka\Metadata\Collection
      * @datetime 2020/12/31 4:01 下午
      * @author   roach
      * @email    jhq0113@163.com

@@ -52,14 +52,14 @@ class Conf
 
     /**
      * Set default topic configuration
-     * @deprecated
+     * @deprecated Sets the default topic configuration to use for for automatically subscribed topics. This can be used along with RdKafka\KafkaConsumer::subscribe() or RdKafka\KafkaConsumer::assign().
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-conf.setdefaulttopicconf.html
-     * @param RdKafka\TopicConf $topic_conf
+     * @param TopicConf $topic_conf
      * @datetime 2020/12/31 3:15 下午
      * @author   roach
      * @email    jhq0113@163.com
      */
-    public function setDefaultTopicConf(RdKafka\TopicConf $topic_conf )
+    public function setDefaultTopicConf(TopicConf $topic_conf )
     {
 
     }

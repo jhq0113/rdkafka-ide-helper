@@ -22,9 +22,9 @@ class KafkaConsumer
      *
      * $kafkaConsumer = new RdKafka\KafkaConsumer($conf);
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-consumertopic.consume.html
-     * @param RdKafka\Conf $conf
+     * @param Conf $conf
      */
-    public function __construct(RdKafka\Conf $conf)
+    public function __construct(Conf $conf)
     {
 
     }
@@ -38,6 +38,21 @@ class KafkaConsumer
      * @email    jhq0113@163.com
      */
     public function assign($topic_partitions = [])
+    {
+
+    }
+
+    /**
+     * Create a new topic instance
+     * @link https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka.newtopic.html
+     * @param string $topic_name
+     * @param TopicConf|null $topic_conf
+     * @return ConsumerTopic
+     * @datetime 2020/12/31 5:27 下午
+     * @author   roach
+     * @email    jhq0113@163.com
+     */
+    public function newTopic($topic_name, TopicConf $topic_conf = null)
     {
 
     }
@@ -72,7 +87,7 @@ class KafkaConsumer
      * Consume message and triggers callbacks
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-kafkaconsumer.consume.html
      * @param integer $timeout_ms
-     * @return Rdkafka\Message
+     * @return Message
      * @datetime 2020/12/31 4:35 下午
      * @author   roach
      * @email    jhq0113@163.com
@@ -85,7 +100,7 @@ class KafkaConsumer
     /**
      * Returns the current partition assignment
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-kafkaconsumer.getassignment.html
-     * @throws RdKafka\Exception
+     * @throws \RdKafka\Exception
      * @return array
      * @datetime 2020/12/31 4:38 下午
      * @author   roach
@@ -124,14 +139,14 @@ class KafkaConsumer
      * Request Metadata from broker
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-kafkaconsumer.getmetadata.html
      * @param bool $all_topics
-     * @param RdKafka\KafkaConsumerTopic|null $only_topic
+     * @param KafkaConsumerTopic|null $only_topic
      * @param int $timeout_ms
      * @return array
      * @datetime 2020/12/31 4:43 下午
      * @author   roach
      * @email    jhq0113@163.com
      */
-    public function getMetadata($all_topics, RdKafka\KafkaConsumerTopic $only_topic = null, $timeout_ms)
+    public function getMetadata($all_topics, KafkaConsumerTopic $only_topic = null, $timeout_ms)
     {
 
     }
@@ -167,11 +182,10 @@ class KafkaConsumer
 
     }
 
-
     /**
      * Unsubscribe from the current subscription set
      * @link https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka-kafkaconsumer.unsubscribe.html
-     * @throws RdKafka\Exception
+     * @throws \RdKafka\Exception
      * @datetime 2020/12/31 4:29 下午
      * @author   roach
      * @email    jhq0113@163.com

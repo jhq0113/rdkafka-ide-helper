@@ -15,7 +15,7 @@ class Queue
      * Consume a single message
      * @link https://arnaud-lb.github.io/php-rdkafka/phpdoc/rdkafka-queue.consume.html
      * @param string $timeout_ms
-     * @return RdKafka\Message
+     * @return Message
      * @datetime 2020/12/31 3:57 下午
      * @author   roach
      * @email    jhq0113@163.com
