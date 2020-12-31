@@ -1,6 +1,6 @@
 <?php
-$brokers = '10.202.4.120:39092';
-$topic   = 'browser_test_topic';
+$brokers = 'yourbrokers';
+$topic   = 'yourtopic';
 $max     = 1000;
 
 $config = new \RdKafka\Conf();

@@ -1,6 +1,6 @@
 <?php
-$brokers = '10.202.4.120:39092';
-$topic   = 'browser_test_topic';
+$brokers = 'yourbrokers';
+$topic   = 'yourtopic';
 $groupId = 'your_group_id';
 
 $conf = new RdKafka\Conf();
